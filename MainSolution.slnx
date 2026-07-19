@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="dev-n8" />
+    <BuildType Name="dev-nf" />
+  </Configurations>
+  <Project Path="packages\AtfKafkaReference\Files\AtfKafkaReference.csproj" />
+  <Project Path="tests\AtfKafkaReference\AtfKafkaReference.Tests.csproj" />
+  <Project Path="tests\AtfKafkaReference.IntegrationTests\AtfKafkaReference.IntegrationTests.csproj" />
+  <Project Path="tools\KafkaRoundTrip.Console\KafkaRoundTrip.Console.csproj" />
+</Solution>

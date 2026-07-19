@@ -1,0 +1,32 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/AtfKafkaReference/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/AtfKafkaReference/Data/**" />
+		<Compile Remove="$(PkgPath)/AtfKafkaReference/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/AtfKafkaReference/Schemas/**" />
+		<Compile Remove="$(PkgPath)/AtfKafkaReference/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AtfKafkaReference/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AtfKafkaReference/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AtfKafkaReference/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AtfKafkaReference/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AtfKafkaReference/Resources/**" />
+		<None Remove="$(PkgPath)/AtfKafkaReference/Assemblies/**" />
+		<None Remove="$(PkgPath)/AtfKafkaReference/Data/**" />
+		<None Remove="$(PkgPath)/AtfKafkaReference/SqlScripts/**" />
+		<None Remove="$(PkgPath)/AtfKafkaReference/Schemas/**" />
+		<None Remove="$(PkgPath)/AtfKafkaReference/Resources/**" />
+	</ItemGroup>
+	<Target Name="PackageKafkaNativeAssets" AfterTargets="Build">
+		<PropertyGroup>
+			<KafkaNativeArtifactDirectory>$(OutputPath)native-artifacts</KafkaNativeArtifactDirectory>
+			<KafkaNativeArtifactPath>$(KafkaNativeArtifactDirectory)\kafka-2.6.1-runtimes.zip</KafkaNativeArtifactPath>
+		</PropertyGroup>
+		<ItemGroup>
+			<KafkaPackagedNativeAsset Include="$(Pkglibrdkafka_redist)\runtimes\**\*" />
+			<KafkaLooseNativeAsset Include="@(KafkaPackagedNativeAsset-&gt;'$(OutputPath)runtimes\%(RecursiveDir)%(Filename)%(Extension)')" />
+		</ItemGroup>
+		<MakeDir Directories="$(KafkaNativeArtifactDirectory)" />
+		<ZipDirectory SourceDirectory="$(Pkglibrdkafka_redist)\runtimes" DestinationFile="$(KafkaNativeArtifactPath)" Overwrite="true" />
+		<Delete Files="@(KafkaLooseNativeAsset)" />
+	</Target>
+</Project>

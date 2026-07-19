@@ -1,0 +1,21 @@
+{
+  "Name": "Creatio Kafka Reference",
+  "Description": "End-to-end Kafka integration reference for Creatio",
+  "Maintainer": "Advance Technologies Foundation",
+  "Icon": "",
+  "IconName": "",
+  "Color": "#FFAC07",
+  "Version": "1.0.0",
+  "RequiredPlatformVersion": "8.3.3",
+  "MarketplaceLink": "",
+  "HelpLink": "",
+  "OrderLink": "",
+  "SupportEmail": "",
+  "Code": "AtfKafkaReference",
+  "Packages": [
+    {
+      "UId": "1f2c5e8a-a5fd-428d-85ad-1b9d739aaf28",
+      "Name": "AtfKafkaReference"
+    }
+  ]
+}

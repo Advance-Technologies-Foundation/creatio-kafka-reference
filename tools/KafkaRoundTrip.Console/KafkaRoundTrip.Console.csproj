@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>KafkaRoundTrip.ConsoleApp</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\packages\AtfKafkaReference\Files\src\cs\Kafka\KafkaRoundTripProtocol.cs" Link="KafkaRoundTripProtocol.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.dev.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('appsettings.dev.json')" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+name: Reference validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  portable-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build standalone Kafka console
+        run: dotnet build tools/KafkaRoundTrip.Console/KafkaRoundTrip.Console.csproj -c Release
+      - name: Validate committed JSON
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse -Filter *.json | ForEach-Object {
+            Get-Content -Raw $_.FullName | ConvertFrom-Json | Out-Null
+          }
+      - name: Reject excluded workshop concerns
+        shell: pwsh
+        run: |
+          $matches = git grep -n -i -E 'WorkshopGooglePubSub|UsrWorkshopVirtualRecord|Google\.Cloud\.PubSub|RestMessageService' -- packages tests tools
+          if ($LASTEXITCODE -eq 0) {
+            $matches
+            throw 'Excluded workshop content is present.'
+          }
+          if ($LASTEXITCODE -ne 1) { throw 'git grep failed.' }

@@ -1,0 +1,212 @@
+{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "45fca544-de07-45ad-978f-b1ae717f190a"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "722dc803-5c3b-43e9-a2eb-230a2cc4d6c5",
+          "DisplayValue": "Kafka bootstrap servers"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "kafka.example.com:9094"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "b0e4062a-8aa5-46fb-a466-7431fb418057"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "e8add165-ce53-40e6-8598-c9fba9cc4f44",
+          "DisplayValue": "Kafka consumer group"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "atf-kafka-reference.creatio"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f7537743-5a11-4d5a-8e25-4c22da0488d0"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "03d69075-d022-41a5-8e3c-14512caa9e8f",
+          "DisplayValue": "Kafka native library path"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9992e0ee-ef66-4940-8c87-430f46388275"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "3d188647-9dda-4ec7-b545-04fd1a046ce5",
+          "DisplayValue": "Kafka notification topic"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "atf-kafka-reference.notifications"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "142ee46f-9c75-472e-979f-2779e75b6390"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "80a24860-44a6-4200-9c05-c6f10067be42",
+          "DisplayValue": "Kafka reply topic"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "atf-kafka-reference.replies"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "50632b74-0386-4939-8b06-6dd807b3ae2e"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "a695b813-3610-4f44-aa11-3f60cbb48717",
+          "DisplayValue": "Kafka request topic"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "atf-kafka-reference.requests"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2567fe0b-bb24-4fa2-b0e0-5a09ae1fbac0"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "7044a632-1313-47d3-8147-2c8f7ddb42a1",
+          "DisplayValue": "Kafka username"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "kafka-user"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "28a280f0-c106-4df0-8c6e-27599f74a19d"
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "2210b1ec-d478-4316-9c77-5e90e46301fe",
+          "DisplayValue": "Kafka worker count"
+        },
+        {
+          "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
+          "Value": "1"
+        }
+      ]
+    }
+  ]
+}

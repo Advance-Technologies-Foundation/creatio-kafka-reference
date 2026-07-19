@@ -1,0 +1,30 @@
+**/.vscode
+**/.vs
+**/.idea
+
+**/.application
+**/.solution
+**/.nuget
+**/*.user
+
+**/[O-o]bj
+**/[B-b]in
+**/allure-results
+**/TestResults
+.artifacts
+
+**\workspaceEnvironmentSettings.json
+
+# Local Kafka console credentials
+**/appsettings.dev.json
+
+# Local cloud service credentials
+.secrets/
+
+# We only keep en-US resources
+**/resource.??-??.xml
+!**/resource.en-US.xml
+
+# We only keep en-US data
+**/data.??-??.json
+!**/data.en-US.json
