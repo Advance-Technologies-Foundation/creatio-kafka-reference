@@ -49,5 +49,7 @@ Kafka deployment uses a different security protocol; do not silently downgrade t
 
 `KafkaAppEventListener` delegates startup and shutdown to the singleton `IKafkaWorkerHost`. Each configured worker
 owns an independent Kafka consumer/producer loop. Shutdown cancels all loops and joins their threads. The maintenance
-web service provides an explicit operational stop boundary, but stopping managed clients does not unload a native
+web service provides an explicit operational stop boundary and requires the caller to hold Creatio's
+`CanManageSolution` operation. Authorization failures return HTTP 403 without touching the runtime. Operational
+failures are logged server-side and return a stable generic error. Stopping managed clients does not unload a native
 module that the worker process has already loaded.
